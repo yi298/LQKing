@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/bootstrap-table-expandable.css">
+  <link rel="stylesheet" href="./css/commont.css">
+  <title>产品-价格套餐</title>
+</head>
+
+
+<body>
+  <!-- 头部 -->
+  <header class="header__body w">
+    <div class="header__logo" style="background-image: url('./static/logo.png');"></div>
+    <ul class="header__nav" id="main">
+      <li class="header__nav__li"><a href="./index.html">主页</a></li>
+      <li class="header__nav__li">
+        <a href="./product.html">产品
+          <ul class="drop">
+            <li class="drop__li"><a href="./product.html">产品特色</a></li>
+            <li class="drop__li"><a href="./product-price.html">价格套餐</a></li>
+            <li class="drop__li"><a href="./product-APP.html">APP下载</a></li>
+          </ul>
+        </a>
+      </li>
+      <li class="header__nav__li"><a href="./project-LG.html">解决方案
+          <ul class="drop">
+            <li class="drop__li"><a href="./project-LG.html">工程保函</a></li>
+            <li class="drop__li"><a href="./project-sign.html">电商签约</a></li>
+            <li class="drop__li"><a href="./project-finance.html">互联网金融</a></li>
+            <li class="drop__li"><a href="./project-bank.html">银行保险</a></li>
+          </ul></a>
+      </li>
+      <li class="header__nav__li"><a href="./serve.html">服务客户</a></li>
+      <li class="header__nav__li"><a href="./call.html">联系我们</a></li>
+      <div id="marker"></div>
+    </ul>
+    <!-- 移动端专用nav -->
+    <button class="m-nav-btn">☵</button>
+    <ul class="m-nav">
+      <li class="m-nav__li"><a href="./index.html">主页</a></li>
+      <li class="m-nav__li m-nav__li--arrow">
+        <a href="./product.html">产品</a>
+        <ul class="m-nav__panel">
+          <li class=""><a href="./product.html">产品特色</a></li>
+          <li class=""><a href="./product-price.html">价格套餐</a></li>
+          <li class=""><a href="./product-APP.html">APP下载</a></li>
+        </ul>
+      </li>
+      <li class="m-nav__li m-nav__li--arrow">
+        <a href="./project-LG.html">解决方案</a>
+        <ul class="m-nav__panel">
+          <li class=""><a href="./project-LG.html">工程保函</a></li>
+          <li class=""><a href="./project-sign.html">电商签约</a></li>
+          <li class=""><a href="./project-finance.html">互联网金融</a></li>
+          <li class=""><a href="./project-bank.html">银行保险</a></li>
+        </ul>
+      </li>
+      <li class="m-nav__li"><a href="./serve.html">服务客户</a></li>
+      <li class="m-nav__li"><a href="./call.html">联系我们</a></li>
+    </ul>
+  </header>
+
+  <!-- 广告-->
+  <div class="banner__body" style="background-image: url('./static/banner_jg.jpg');">
+    <div class="banner__content w">
+      <h3>多种套餐供你选择</h3>
+      <p>满足各大企业需求</p>
+    </div>
+  </div>
+
+  <!-- tittle -->
+  <div class="tittle">
+    <div class="tittle-hr"></div>
+    <h3>版本价格</h3>
+    <p class="tittle__p">更多企业套餐，欢迎拨打<span>400-869-2012</span>免费咨询</p>
+  </div>
+
+  <!-- 价格 -->
+  <div class="price__card__body w">
+    <div class="price__card">
+      <div class="card__tittle" style="background: #2d7dfa;">单份合同签署</div>
+      <div class="card__main">
+        <div class="card__main__pri"><span>￥</span>8.80</div>
+        <p>单份合同签署：1份</p>
+        <p>有效期：1年</p>
+        <button id="color1">立即购买</button>
+      </div>
+    </div>
+    <div class="price__card">
+      <div class="card__tittle" style="background: #5f7ce3;">企业A套餐</div>
+      <div class="card__main">
+        <div class="card__main__pri"><span>￥</span>1199.0</div>
+        <p>单份合同签署：200份</p>
+        <p>有效期：1年</p>
+        <button id="color2">立即购买</button>
+      </div>
+    </div>
+    <div class="price__card">
+      <div class="card__tittle" style="background: #5761ed;">企业B套餐</div>
+      <div class="card__main">
+        <div class="card__main__pri"><span>￥</span>1199.0</div>
+        <p>单份合同签署：400份</p>
+        <p>有效期：1年</p>
+        <button id="color3">立即购买</button>
+      </div>
+    </div>
+    <div class="price__card">
+      <div class="card__tittle" style="background: #3333ef;">企业C套餐</div>
+      <div class="card__main">
+        <div class="card__main__pri"><span>￥</span>2998.0</div>
+        <p>单份合同签署：1000份</p>
+        <p>有效期：1年</p>
+        <button id="color4">立即购买</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- tittle -->
+  <div class="tittle">
+    <div class="tittle-hr"></div>
+    <h3>常见问题</h3>
+  </div>
+
+  <!-- 常见问题 -->
+  <div class="price__question__lists">
+    <div class="price__question__container container">
+      <table class="table table-hover table-expandable">
+        <tbody>
+          <tr>
+            <td>链签王各个版本最低购买年限和最小用户数是多少？</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="open">
+              <h4>按提交续费时的最新市场价格进行续费。我们的续费标准与官网价格一致，无需额外服务费用。</h4>
+              <h4>按提交续费时的最新市场价格进行续费。我们的续费标准与官网价格一致，无需额外服务费用。</h4>
+              <h4>按提交续费时的最新市场价格进行续费。我们的续费标准与官网价格一致，无需额外服务费用。</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>如果我要增加或者减少用户数，应该怎么计算价格？</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="open">
+              <h4>Additional information</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>链签王各个版本有什么优惠？</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="open">
+              <h4>Additional information</h4>
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid #ddd;">
+            <td>链签王各个版本如何续费？</td>
+          </tr>
+          <tr>
+            <td colspan="5" class="open">
+              <h4>Additional information</h4>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="price__question__eles">
+      <p>仍有疑问？欢迎咨询产品客服</p>
+      <button>立即查询</button>
+    </div>
+  </div>
+
+
+  <!-- 尾部 -->
+  <footer class="footer__body">
+    <div class="footer__body-w w">
+      <div class="footer__call">
+        <div class="footer__call-img" style="background-image: url('/static/logo-1.png');"></div>
+        <p>公司名称：易签链（深圳）科技有限公司</p>
+        <p>公司地址：深圳市罗湖区黄贝街道怡景路2008号动漫基地B403</p>
+        <p>公司电话：0755-22379960</p>
+      </div>
+      <div class="footer__nav">
+        <dl>
+          <dt><a href="">首页</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="">产品</a></dt>
+          <dd><a href="">产品特色</a></dd>
+          <dd><a href="">价格套餐</a></dd>
+          <dd><a href="">APP下载</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">解决方案</a></dt>
+          <dd><a href="">工程保函</a></dd>
+          <dd><a href="">电商签约</a></dd>
+          <dd><a href="">互联网金融</a></dd>
+          <dd><a href="">银行保险</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">服务客户</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="">联系我们</a></dt>
+        </dl>
+      </div>
+      <div class="footer__2wm">
+        <div class="footer__2wm-img" style="background-image: url('./static/2wm.jpg');"></div>
+        <p>官方微信</p>
+      </div>
+    </div>
+
+
+  </footer>
+  <!-- 地址 -->
+  <div class="address">
+    易签链（深圳）科技有限公司 版权所有 保留一切权利 备案号:<a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备19138848号-1
+  </div>
+</body>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="./js/bootstrap-table-expandable.js"></script>
+<script src="./js/unslider.min.js"></script>
+<script src="./js/commont.js"></script>
+
+</html>

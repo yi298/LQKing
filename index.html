@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/commont.css">
+  <title>index</title>
+</head>
+
+<style>
+  .slideshow {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    height: 100%;
+    width: 100% !important;
+  }
+
+  /* .slideshow li {
+    list-style: none;
+  } */
+
+  .slideshow ul li {
+    float: left;
+  }
+
+  #b01 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+  }
+
+  #b01 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+  }
+
+  #b01 .dots li.active {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .slideshow-link {
+    width: 100%;
+    height: 712px;
+    background: no-repeat center;
+    background-size: 1920px 712px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slideshow-link {
+      height: 280px;
+      background: no-repeat center;
+      background-size: 1920px 280px;
+    }
+  }
+</style>
+
+<body>
+  <!-- 头部 -->
+  <header class="header__body w">
+    <div class="header__logo" style="background-image: url('./static/logo.png');"></div>
+    <ul class="header__nav" id="main">
+      <li class="header__nav__li"><a href="./index.html">主页</a></li>
+      <li class="header__nav__li">
+        <a href="./product.html">产品
+          <ul class="drop">
+            <li class="drop__li"><a href="./product.html">产品特色</a></li>
+            <li class="drop__li"><a href="./product-price.html">价格套餐</a></li>
+            <li class="drop__li"><a href="./product-APP.html">APP下载</a></li>
+          </ul>
+        </a>
+      </li>
+      <li class="header__nav__li"><a href="./project-LG.html">解决方案
+          <ul class="drop">
+            <li class="drop__li"><a href="./project-LG.html">工程保函</a></li>
+            <li class="drop__li"><a href="./project-sign.html">电商签约</a></li>
+            <li class="drop__li"><a href="./project-finance.html">互联网金融</a></li>
+            <li class="drop__li"><a href="./project-bank.html">银行保险</a></li>
+          </ul></a>
+      </li>
+      <li class="header__nav__li"><a href="./serve.html">服务客户</a></li>
+      <li class="header__nav__li"><a href="./call.html">联系我们</a></li>
+      <div id="marker"></div>
+    </ul>
+    <!-- 移动端专用nav -->
+    <button class="m-nav-btn">☵</button>
+    <ul class="m-nav">
+      <li class="m-nav__li"><a href="./index.html">主页</a></li>
+      <li class="m-nav__li m-nav__li--arrow">
+        <a href="./product.html">产品</a>
+        <ul class="m-nav__panel">
+          <li class=""><a href="./product.html">产品特色</a></li>
+          <li class=""><a href="./product-price.html">价格套餐</a></li>
+          <li class=""><a href="./product-APP.html">APP下载</a></li>
+        </ul>
+      </li>
+      <li class="m-nav__li m-nav__li--arrow">
+        <a href="./project-LG.html">解决方案</a>
+        <ul class="m-nav__panel">
+          <li class=""><a href="./project-LG.html">工程保函</a></li>
+          <li class=""><a href="./project-sign.html">电商签约</a></li>
+          <li class=""><a href="./project-finance.html">互联网金融</a></li>
+          <li class=""><a href="./project-bank.html">银行保险</a></li>
+        </ul>
+      </li>
+      <li class="m-nav__li"><a href="./serve.html">服务客户</a></li>
+      <li class="m-nav__li"><a href="./call.html">联系我们</a></li>
+    </ul>
+  </header>
+
+  <!-- 轮播图 -->
+  <div class="slideshow__body">
+    <div class="slideshow" id="b01">
+      <ul>
+        <li>
+          <a class="" href="">
+            <!-- <img src="" alt="{$slideshowItem.title}" /> -->
+            <div class="slideshow-link" style="background-image: url('./static/slideshow.jpg');">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="" href="">
+            <!-- <img src="" alt="{$slideshowItem.title}" /> -->
+            <div class="slideshow-link" style="background-image: url('./static/slideshow.jpg');"></div>
+          </a>
+        </li>
+        <li>
+          <a class="" href="">
+            <!-- <img src="" alt="{$slideshowItem.title}" /> -->
+            <div class="slideshow-link" style="background-image: url('./static/slideshow.jpg');"></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="slideshow__text">
+      <h3>链签王合法可靠的电子签名服务</h3>
+      <p>实名认证 、秒速签署 、一键查找，线上签约好轻松</p>
+      <button>立即下载</button>
+    </div>
+  </div>
+  <!-- tittle -->
+  <div class="tittle">
+    <div class="tittle-hr"></div>
+    <h3>链签王，让签署更安全、更高效、更放心</h3>
+  </div>
+
+  <!-- 卡片 -->
+  <div class="index__card-body w">
+    <div class="index__card-border">
+      <div class="index__card__box">
+        <div class="index_card__img" style="background-image: url('./static/sj_1.png');"></div>
+        <div class="index_card__content">
+          <h3>数据安全</h3>
+          <p>领先的信息运维机制严守数据安全；数据传输军用级别加密防止信息泄漏</p>
+        </div>
+      </div>
+    </div>
+    <div class="index__card-border">
+      <div class="index__card__box">
+        <div class="index_card__content">
+          <h3>数据安全</h3>
+          <p>领先的信息运维机制严守数据安全；数据传输军用级别加密防止信息泄漏</p>
+        </div>
+        <div class="index_card__img" style="background-image: url('./static/gx_2.png');"></div>
+      </div>
+    </div>
+    <div class="index__card-border">
+      <div class="index__card__box">
+        <div class="index_card__img" style="background-image: url('./static/sq_3.png');"></div>
+        <div class="index_card__content">
+          <h3>数据安全</h3>
+          <p>领先的信息运维机制严守数据安全；数据传输军用级别加密防止信息泄漏</p>
+        </div>
+      </div>
+    </div>
+    <div class="index__card-border">
+      <div class="index__card__box">
+        <div class="index_card__content">
+          <h3>数据安全</h3>
+          <p>领先的信息运维机制严守数据安全；数据传输军用级别加密防止信息泄漏</p>
+        </div>
+        <div class="index_card__img" style="background-image: url('./static/fl_4.png');"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tittle -->
+  <div class="tittle tittle-bg">
+    <div class="tittle-hr"></div>
+    <h3>简单易用、功能强大</h3>
+  </div>
+
+  <!-- 功能 -->
+  <div class="index__functions__body">
+    <div class="index__functions__body-w w">
+      <div class="index__functions__img" style="background-image: url('./static/yangji.png');"></div>
+      <div class="index__functions__content-box">
+        <div class="index__functions__content">
+          <div class="index__functions__content-icon" style="background-image: url('./static/icon1_i.png');"></div>
+          <div class="index__functions__content__text">
+            <h3>在线编辑</h3>
+            <p>云端在线合同编辑，省时省心合同文件实时上传，在线调整更方便合同模板丰富多样，支持自定义用户模板</p>
+          </div>
+        </div>
+        <div class="index__functions__content">
+          <div class="index__functions__content-icon" style="background-image: url('./static/icon2_i.png');"></div>
+          <div class="index__functions__content__text">
+            <h3>合同签署</h3>
+            <p>无需面对面或者打印快递合同，一站式在线极速签发有效电子合同；采用实名认证+数字认证，确保身份真实有效；领先的数字签名技术，有效防篡改</p>
+          </div>
+        </div>
+        <div class="index__functions__content">
+          <div class="index__functions__content-icon" style="background-image: url('./static/icon3_i.png');"></div>
+          <div class="index__functions__content__text">
+            <h3>合同管理</h3>
+            <p>一站式合同在线管理，提供合同智能检索、归档、下载等免费功能有效降低合同管理的仓储成本和人力成本</p>
+          </div>
+        </div>
+        <div class="index__functions__content">
+          <div class="index__functions__content-icon" style="background-image: url('./static/icon4_i.png');"></div>
+          <div class="index__functions__content__text">
+            <h3>法律服务</h3>
+            <p>合同签署后自动进行电子证据存储提供签署全过程的法律公正服务随时随地提供在线法律咨询服务</p>
+          </div>
+        </div>
+        <div class="index__functions__content">
+          <div class="index__functions__content-icon" style="background-image: url('./static/icon5_i.png');"></div>
+          <div class="index__functions__content__text">
+            <h3>存证保全</h3>
+            <p>场景式存证服务、一站式出证平台，打通司法鉴定、网络仲裁、公证服务</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div class="index__APP__body">
+    <div class="APP__phone-w w">
+      <div class="APP__phone"><img src="./static/Two-dimensional code.png" alt=""></div>
+    </div>
+
+    <div class="APP__top-w w">
+      <div class="APP__top">
+        <div class="APP__top__tittle tittle">
+          <div class="tittle-hr"></div>
+          <h3>应用下载</h3>
+          <p class="tittle__p">“链签王”根据国家政策要求，通过第三方电子合同平台进行电子平台合同签署技术的利器，满足各大
+            平台全线上化，提升线上供应链管理效率，消除纸质合同安全隐患</p>
+        </div>
+        <div class="APP__top__icon">
+          <div class="APP__top__icon__ios">
+            <a href="#">
+              <div class="APP__top__icon-bg" style="background-image: url('./static/ios_ hover cy.png');"></div>
+            </a>
+            <a href="#">
+              <div class="APP__top__icon-bg" style="background-image: url('./static/ios_ hover.png');"></div>
+            </a>
+          </div>
+          <div class="APP__top__icon__AD">
+            <a href="#">
+              <div class="APP__top__icon-bg" style="background-image: url('./static/AD_ hover cy.png');"></div>
+            </a>
+            <a href="#">
+              <div class="APP__top__icon-bg" style="background-image: url('./static/AD_ hover.png');"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="APP__bottom w" style="background-image: url('./static/bg_xz.jpg');">
+      <div class="APP__bottom__iconBox-w w">
+        <div class="APP__bottom__iconBox">
+          <div class="APP__bottom__icon">
+            <div class="APP__bottom__icon-bg" style="background-image: url('./static/1.png');"></div>
+            <h3 class="APP__bottom__h3">23325+</h3>
+            <div class="APP__bottom__hr"></div>
+            <p class="APP__bottom__p">用户</p>
+          </div>
+          <div class="APP__bottom__icon">
+            <div class="APP__bottom__icon-bg" style="background-image: url('./static/1.png');"></div>
+            <h3 class="APP__bottom__h3">36</h3>
+            <div class="APP__bottom__hr"></div>
+            <p class="APP__bottom__p">城市</p>
+          </div>
+          <div class="APP__bottom__icon">
+            <div class="APP__bottom__icon-bg" style="background-image: url('./static/1.png');"></div>
+            <h3 class="APP__bottom__h3">23325+</h3>
+            <div class="APP__bottom__hr"></div>
+            <p class="APP__bottom__p">下载量</p>
+          </div>
+          <div class="APP__bottom__icon">
+            <div class="APP__bottom__icon-bg" style="background-image: url('./static/1.png');"></div>
+            <h3 class="APP__bottom__h3">23325亿+</h3>
+            <div class="APP__bottom__hr"></div>
+            <p class="APP__bottom__p">月上传量</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 解决方案 -->
+  <div class="index__product__body-bg">
+    <div class="tittle">
+      <div class="tittle-hr"></div>
+      <h3>我们为全行业 提供专业解决方案</h3>
+    </div>
+    <div class="index__product__body w">
+      <div class="index__product">
+        <div class="index__product-img" style="background-image: url('./static/img_1.jpg');"></div>
+        <div class="index__product__text">
+          <h3 class="index__product__text-h3">互联网金融</h3>
+          <p class="index__product__text-p">贷款合同 | 投资协议 | 理财合同</p>
+        </div>
+        <div class="index__product-show">
+          <button>查看详情</button>
+        </div>
+      </div>
+      <div class="index__product">
+        <div class="index__product-img" style="background-image: url('./static/img_2.jpg');"></div>
+        <div class="index__product__text">
+          <h3 class="index__product__text-h3">在线旅游</h3>
+          <p class="index__product__text-p">旅游合同 | 同业合同 | 代订代办委托合同</p>
+        </div>
+        <div class="index__product-show">
+          <button>查看详情</button>
+        </div>
+      </div>
+      <div class="index__product">
+        <div class="index__product-img" style="background-image: url('./static/img_3.jpg');"></div>
+        <div class="index__product__text">
+          <h3 class="index__product__text-h3">电话签约</h3>
+          <p class="index__product__text-p">旅游合同 | 同业合同 | 代订代办委托合同</p>
+        </div>
+        <div class="index__product-show">
+          <button>查看详情</button>
+        </div>
+      </div>
+      <div class="index__product">
+        <div class="index__product-img" style="background-image: url('./static/img_4.jpg');"></div>
+        <div class="index__product__text">
+          <h3 class="index__product__text-h3">银行风险</h3>
+          <p class="index__product__text-p">旅游合同 | 同业合同 | 代订代办委托合同</p>
+        </div>
+        <div class="index__product-show">
+          <button>查看详情</button>
+        </div>
+      </div>
+    </div>
+    <div class="batter"><a href="http://">查看更多>></a></div>
+  </div>
+
+  <!-- tittle -->
+  <div class="tittle">
+    <div class="tittle-hr"></div>
+    <h3>我们的合作伙伴</h3>
+  </div>
+
+  <!-- 合作伙伴 -->
+  <div class="index__team__body w">
+    <div class="index__team">
+      <div class="index__team-img" style="background-image: url('./static/hzhb.jpg');"></div>
+    </div>
+    <div class="index__team">
+      <div class="index__team-img" style="background-image: url('./static/hzhb.jpg');"></div>
+    </div>
+    <div class="index__team">
+      <div class="index__team-img" style="background-image: url('./static/hzhb.jpg');"></div>
+    </div>
+    <div class="index__team">
+      <div class="index__team-img" style="background-image: url('./static/hzhb.jpg');"></div>
+    </div>
+    <a href="" class="index__team__ye">&lt;</a>
+    <a href="" class="index__team__ye">&gt;</a>
+  </div>
+
+  <!-- 尾部 -->
+  <footer class="footer__body">
+    <div class="footer__body-w w">
+      <div class="footer__call">
+        <div class="footer__call-img" style="background-image: url('/static/logo-1.png');"></div>
+        <p>公司名称：易签链（深圳）科技有限公司</p>
+        <p>公司地址：深圳市罗湖区黄贝街道怡景路2008号动漫基地B403</p>
+        <p>公司电话：0755-22379960</p>
+      </div>
+      <div class="footer__nav">
+        <dl>
+          <dt><a href="">首页</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="">产品</a></dt>
+          <dd><a href="">产品特色</a></dd>
+          <dd><a href="">价格套餐</a></dd>
+          <dd><a href="">APP下载</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">解决方案</a></dt>
+          <dd><a href="">工程保函</a></dd>
+          <dd><a href="">电商签约</a></dd>
+          <dd><a href="">互联网金融</a></dd>
+          <dd><a href="">银行保险</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">服务客户</a></dt>
+        </dl>
+        <dl>
+          <dt><a href="">联系我们</a></dt>
+        </dl>
+      </div>
+      <div class="footer__2wm">
+        <div class="footer__2wm-img" style="background-image: url('./static/2wm.jpg');"></div>
+        <p>官方微信</p>
+      </div>
+    </div>
+
+
+  </footer>
+  <!-- 地址 -->
+  <div class="address">
+    易签链（深圳）科技有限公司 版权所有 保留一切权利 备案号:<a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备19138848号-1
+  </div>
+</body>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/unslider.min.js"></script>
+<script src="./js/commont.js"></script>
+<script>
+  // // 轮播图
+  // $(document).ready(function (e) {
+  //   $('#b01').unslider({
+  //     fluid: false,
+  //     dots: true//加上原点指示器
+  //   });
+  // });
+</script>
+
+</html>
