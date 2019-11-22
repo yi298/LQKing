@@ -36,8 +36,11 @@ a:hover {
   flex: 1;
   height: 76px;
   flex-basis: 213px;
+  background-size: 213px 76px;
   flex-grow: 0;
   flex-shrink: 0;
+  display: block;
+  margin-bottom: 20px;
   background: no-repeat;
   background-size: contain;
 }
@@ -58,7 +61,7 @@ a:hover {
 }
 
 .header__body .header__nav .header__nav__li {
-  min-width: 92px;
+  min-width: 125px;
   height: 100px;
   position: relative;
   display: flex;
@@ -300,6 +303,7 @@ a:hover {
   .header__body .header__logo {
     height: 100px;
     width: 213px;
+    margin: 0;
     flex: none;
   }
 
@@ -511,18 +515,20 @@ a:hover {
 .footer__body .footer__body-w .footer__call {
   width: 25%;
   position: relative;
+  padding-top: 60px;
 }
 
 .footer__body .footer__body-w .footer__call p {
   line-height: 28px;
+  font-size: 14px;
 }
 
 .footer__body .footer__body-w .footer__call .footer__call-img {
   position: absolute;
-  top: -60px;
+  top: -28px;
   left: 0;
-  height: 50px;
-  width: 100px;
+  height: 53px;
+  width: 133px;
   background: no-repeat;
   background-size: contain;
 }
@@ -1350,6 +1356,13 @@ a:hover {
   margin-top: 25px;
 }
 
+.price-card__eles {
+  text-align: center;
+  color: #9A9A9A;
+  font-size: 20px;
+  margin: 45px 0;
+}
+
 .price-card-center {
   justify-content: center;
 }
@@ -1465,17 +1478,6 @@ a:hover {
 
 .price__card__body .price__card .card__main #color4 {
   background: #3333ef;
-}
-
-.price-card__eles {
-  text-align: center;
-  color: #9A9A9A;
-  font-size: 20px;
-  margin: 45px 0;
-}
-
-.price-card__eles span {
-  color: #2180F7;
 }
 
 .price__question__lists .price__question__container {
@@ -1858,6 +1860,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 400px;
   padding: 15px 80px;
 }
 
